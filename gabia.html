@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>웹 호스팅 설치가 완료되었습니다.</title>
+    <link rel="stylesheet" href="https://static.gabia.com/responsive/assets/common/scss/common.css">
+    <style>
+    body {background: #F0F4F9;}
+    .hosting-wrap {width: 780px; margin: 50px auto; background: #fff;box-shadow: 1px 1px 5px #0000000D;}
+    .hosting-wrap dl {float: left; width: calc(100% - 105px); margin-left: 30px;padding-top: 40px;}
+    .hosting-wrap dt {font-size: 18px; padding-bottom: 5px;}
+    .hosting-wrap dd {padding-top: 10px;font-size: 16px; font-weight: 300; display: table;}
+    .hosting-wrap dd:before {display: table-cell; width: 15px; content:'\2022'}
+    .hosting-wrap .point-color {color: #1D7ABD;}
+    .hosting-wrap a.point-color:hover {text-decoration: underline;}
+    .hosting-wrap .hosting-button {display: inline-block;margin: 5px 0 0; padding: 2px 17px 3px; border:1px solid #999; border-radius: 2px; font-size: 14px; color: #666;}
+    .hosting-wrap .hosting-button i {margin-left: 5px;}
+    .hosting-wrap .hosting-button:hover {border:1px solid #1D7ABD; color: #1D7ABD;}
+    .hosting-header h1 {padding-top: 40px; padding-left: 40px;}
+    .hosting-header header {padding-top: 80px; text-align: center; font-weight: bold; font-size: 36px;}
+    .hosting-header p {padding: 16px 0 80px;text-align: center; font-size: 20px ;font-weight: 300;}
+    .hosting-ssh, .hosting-connect, .hosting-dbandmail, .hosting-notice {margin: 0 40px;padding: 60px 0;border-top: 1px solid #D8D8D8;}
+    .hosting-ssh {padding-top: 10px;}
+    .hosting-ssh:after, .hosting-connect:after, .hosting-dbandmail:after, .hosting-notice:after {clear: both; display: block; content:''}
+    .hosting-connect header, .hosting-dbandmail header, .hosting-notice header, .hosting-consult header {padding-bottom: 10px;font-size: 26px; color: #000; font-weight: 400; text-align: center;}
+    .hosting-connect ul, .hosting-dbandmail ul, .hosting-notice ul {padding-top: 10px;}
+    .hosting-connect li, .hosting-dbandmail li, .hosting-notice li {display: table; color: #666;}
+    .hosting-connect li:before, .hosting-dbandmail li:before, .hosting-notice li:before {display: table-cell; width: 15px; content:'–'; color: #666;}
+    .hosting-icon {display: inline-block; width: 72px;height: 72px; float: left;}
+    .hosting-icon.is-ssh {margin: 40px 0 0;background: url('https://static.gabia.com/www/hosting/webhosting/icon-ssh.png') 0 0 no-repeat;}
+    .hosting-icon.is-app {margin: 40px 0 0;background: url('https://static.gabia.com/www/hosting/webhosting/icon-app.png') 0 0 no-repeat;}
+    .hosting-icon.is-nameserver {margin: 40px 0 0;background: url('https://static.gabia.com/www/hosting/webhosting/icon-nameserver.png') 0 0 no-repeat;}
+    .hosting-icon.is-db {margin: 40px 0 0;background: url('https://static.gabia.com/www/hosting/webhosting/icon-db.png') 0 0 no-repeat;}
+    .hosting-icon.is-mail {margin: 40px 0 0;background: url('https://static.gabia.com/www/hosting/webhosting/icon-mail.png') 0 0 no-repeat; width: 75px;}
+    .hosting-icon.is-notice {margin: 40px 0 0;background: url('https://static.gabia.com/www/hosting/webhosting/icon-notice.png') 0 0 no-repeat;}
+    .hosting-wrap .hosting-notice dd:first-child {padding-top: 0;}
+    .hosting-wrap .hosting-notice p {float: left;clear: both; margin-top: 10px; margin-left: 105px; color: #000;}
+    .hosting-consult {background: #F8F8F8; text-align: center; padding: 60px 0;}
+    .hosting-consult .customer-title {font-size: 20px; padding-top: 40px; padding-bottom: 30px;}
+    .hosting-consult .customer-number li {display: inline-block; }
+    .hosting-consult .customer-number li:not(:first-child) {border-left: 1px solid #E5E5E5;padding: 0 35px;}
+    .hosting-consult .customer-number li:first-child {padding: 0 75px;}
+    .hosting-consult .customer-number .number {color: #1D7ABD; font-size: 20px; padding-top: 10px;}
+    .hosting-consult .customer-time {padding-top: 30px; font-weight: 300;}
+    .hosting-consult .customer-desc {padding-top: 30px;}
+    .hosting-wrap footer {padding: 50px 0;text-align: center;}
+    .hosting-wrap footer a {color: #666; font-weight: 300;}
+    .hosting-wrap footer a:not(:nth-of-type(1)):before {display: inline-block; width: 20px; content:'|'; color: #D8D8D8;}
+    </style>
+</head>
+<body>
+    <div class="hosting-wrap">
+        <section class="hosting-header">
+            <h1><a href="https://www.gabia.com/" target="_blank" rel="noopener"><img src="https://static.gabia.com/www/common/img/logo.png" alt="gabia"></a></h1>
+            <header><span class="point-color">웹 호스팅 설치</span>가 완료되었습니다.</header>
+            <p>홈페이지 운영을 위한 웹호스팅 서비스를 이용할 수 있습니다.</p>
+        </section>
+        
+        <section class="hosting-ssh">
+            <span class="hosting-icon is-ssh"></span>
+            <dl>
+                <dt>SSH 원격 접속 및 파일 업로드</dt>
+                <dd><a href="https://console.gabia.com/" class="point-color" target="_blank" rel="noopener">[My가비아 &gt; 서비스 관리 &gt; 호스팅 관리 콘솔 &gt; 웹호스팅 &gt; 비밀번호 변경]</a>에서 비밀번호를<br>설정하셔야 서비스를 이용할 수 있습니다.</dd>
+                <dd>
+                    FTP는 FTP 소프트웨어를 이용하여 접속할 수 있습니다.<br>
+                    (호스트 주소: 도메인명 / 계정: 소문자로 입력)<br>
+                    <a href="https://customer.gabia.com/manual#/34/215/2504" class="point-color" target="_blank" rel="noopener">[FTP 접속하기 매뉴얼]</a>
+                </dd>
+                <dd>내부 방화벽이나 인터넷 공유기를 사용하는 경우, FTP 접속 시 패시브 모드(Passive mode)에<br>체크 후 접속해주세요.</dd>
+                <dd>윈도우 클라이언트에서 리눅스 서버로 원격 접속할 경우, SSH 접속 프로그램을 다운로드<br>받으시기 바랍니다.<br><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/" class="hosting-button" target="_blank" rel="noopener">무료 SSH 접속 프로그램(putty) 다운로드 <i class="far fa-arrow-to-bottom"></i></a></dd>
+                <dd>SSH를 통해 서버에 원격 접속하여 파일 및 프로젝트 등을 배포할 수 있습니다.<br>
+                윈도우 클라이언트에서 리눅스 서버로 파일 업로드 또는 다운로드할 경우, FTP 프로그램을<br>통해 SSH 프로토콜(22번 포트)로
+                접속하시기 바랍니다.<br><a href="https://customer.gabia.com/manuals/detail_pop?seq_no=764" class="point-color" target="_blank" rel="noopener">[SFTP/SSH 접속하기 매뉴얼]</a></dd>
+                <dd>SSH 원격 접속 설정은 <a href="https://console.gabia.com/" class="point-color" target="_blank" rel="noopener">[My가비아 &gt; 서비스 관리 &gt; 호스팅 관리 콘솔 &gt; 보안 &gt; 호스팅 &gt;<br>SFTP/SSH 보안 설정]</a>에서 접속 여부와 기간을 설정할 수 있습니다.</dd>
+                <dd>URL로 접속할 때 가장 먼저 보여줄 파일 이름은 반드시 index로 설정해야 합니다.</dd>
+                <dd>파일 이름에 한글 또는 공백 문자(Space)가 있거나, 영문 대소문자가 혼용된 경우<br>페이지에 연결되지 않을 수 있습니다. 따라서 파일 이름은 영문 소문자로 통일하여<br>지정하시기 바랍니다.</dd>
+            </dl>
+        </section>
+        
+        <section class="hosting-connect">
+            <header>웹 페이지를 연결하고 싶으신가요?</header>
+            <div class="hosting-nameserver">
+                <span class="hosting-icon is-nameserver"></span>
+                <dl>
+                    <dt>네임서버 설정</dt>
+                    <dd>가비아에서 등록한 도메인에 가비아 네임서버가 설정되어 있으면 DNS 정보는 자동 설정됩니다. 단, 아래의 경우는 DNS 정보를 직접 입력해야 합니다.
+                        <ul>
+                            <li>호스팅 소유자와 도메인 소유자가 다른 경우</li>
+                            <li>DNS 정보가 이미 설정되어 운영 중인 경우</li>
+                            <li>타 기관에서 등록된 도메인인 경우</li>
+                        </ul>
+                    </dd>
+                    <dd>도메인 네임서버가 가비아가 아닌 경우, 가비아 네임서버로 변경해야 정상적으로 서비스<br>연결이 됩니다. 네임서버 정보는 서비스 설치 완료 후, 메일로 발송됩니다.
+                        <ul>
+                            <li>네임서버 확인/변경: <a href="https://domain.gabia.com/manage/changeinfo" class="point-color" target="_blank" rel="noopener">[도메인 관리툴 &gt; 정보 변경 &gt; 도메인 선택 &gt; 상단 네임서버 클릭]</a></li>
+                        </ul>
+                    </dd>
+                    <dd>타사 네임서버를 계속 이용하려면, 현재 사용 중인 업체에서 네임서버 정보를 변경해 주세요.</dd>
+                    <dd>타사에서 이전하는 경우, 먼저 가비아로 홈페이지를 이전한 후 네임서버를 변경해야 사이트가<br>중단되지 않습니다.</dd>
+                </dl>
+            </div>
+        </section>
+        
+        <section class="hosting-dbandmail">
+            <header>DB 및 메일을 이용하실 때 확인하세요.</header>
+            <div class="hosting-db">
+                <span class="hosting-icon is-db"></span>
+                <dl>
+                    <dt>DB 설정</dt>
+                    <dd>MySQL DB를 이용하시는 경우, SSH 원격 접속을 통해 DB 테이블 생성 및 관리할 수 있습니다.<br><a href="http://customer.gabia.com/manuals/detail_pop?seq_no=779 " class="point-color" target="_blank" rel="noopener">[MySQL 접속/백업/복원하기 매뉴얼]</a></dd>
+                </dl>
+            </div>
+            <div class="hosting-mail">
+                <span class="hosting-icon is-mail"></span>
+                <dl>
+                    <dt>메일 계정 설정</dt>
+                    <dd>기본 도메인(ftpid.gabia.io)을 이용하실 경우, 웹메일을 사용할 수 없습니다.
+                        <ul>
+                            <li>대표 도메인 변경: <a href="https://console.gabia.com/" class="point-color" target="_blank" rel="noopener">[My가비아 &gt; 서비스 관리 &gt; 호스팅 관리 콘솔 &gt; 웹호스팅 &gt; 도메인 [변경]]</a></li>
+                            <li>메일 사용 신청: <a href="https://console.gabia.com/" class="point-color" target="_blank" rel="noopener">[My가비아 &gt; 서비스 관리 &gt; 호스팅 관리 콘솔 &gt; 웹호스팅 &gt; 웹메일 [신청]]</a></li>
+                        </ul>
+                    </dd>
+                    <dd>원활한 메일 송수신을 위해 도메인을 ‘통합 White 도메인’으로 반드시 등록해 주세요.<br><a href="https://customer.gabia.com/manuals/detail_pop?seq_no=709" class="point-color" target="_blank" rel="noopener">[화이트 도메인이란?]</a></dd>
+                    <dd>POP3/SMTP를 사용을 허용하여 아웃룩에서 메일을 확인할 수 있습니다.<br><a href="https://customer.gabia.com/manual#/35/3460/3535" class="point-color" target="_blank" rel="noopener">[MS Outlook 2016 연동하기 매뉴얼]</a></dd>
+                    <dd>대량 메일 또는 정크 메일을 발송할 경우 고객의 동의 없이 메일 서비스를 중단할 수 있습니다.</dd>
+                </dl>
+            </div>
+        </section>
+        
+        <section class="hosting-notice">
+            <header>서비스 이용 시 주의 사항입니다.</header>
+            <span class="hosting-icon is-notice"></span>
+            <dl>
+                <dd>호스팅 이용 제한 사항에 해당하는 경우, 고객의 동의 없이 선 조치 후 통보할 수 있으며<br>필요에 따라 삭제 조치할 수 있습니다.
+                    <ul>
+                        <li>서버에 부하를 주는 기능 또는 프로그램을 과도하게 사용하는 경우<br>
+                        (동영상 및 이미지 업ㆍ다운로드, 링크 및 공유, 방송, 채팅, 게임, 커뮤니티 등)</li>
+                        <li>통상적인 웹사이트 대비 서버 자원의 점유율, 부하율이 상대적으로 높아 동일 서버를 이용하는<br>서비스에 피해를 주는 경우</li>
+                        <li>정보의 저작권에 대하여 책임을 지지 않고 불법적인 행위를 하는 경우</li>
+                        <li>음란하고 선정적인 사진이나 글 등을 게재하거나 공공질서나 미풍양속에 저해되는<br>행위를 한 경우</li>
+                    </ul>
+                </dd>
+            </dl>
+            <p>* 더 자세한 내용은 <a href="https://www.gabia.com/agreements/hosting" class="point-color" target="_blank" rel="noopener">[호스팅 이용 약관]</a> 페이지에서 확인하시기 바랍니다.</p>
+        </section>
+
+        <section class="hosting-consult">
+            <header>문의 사항이 있으신가요? 전문가와 상담하세요.</header>
+            <p class="customer-title"><i class="fal fa-headset"></i> 고객센터</p>
+            <ul class="customer-number">
+                <li>
+                    <p class="title">대표전화</p>
+                    <p class="number">1544-4370</p>
+                </li>
+                <li>
+                    <p class="title">FAX</p>
+                    <p class="number">02-6008-6626</p>
+                </li>
+                <li>
+                    <p class="title">이메일</p>
+                    <p class="number">hosting@gabia.com</p>
+                </li>
+            </ul>
+            <p class="customer-time">운영시간: 평일 9:00 ~ 18:00(주말, 공휴일 제외)서비스 장애 관련 상담은 24시간 365일 가능</p>
+            <p class="customer-desc">더 나은 서비스를 제공하기 위해 항상 노력하겠습니다.감사합니다.</p>
+        </section>
+        <footer>
+            <a href="https://domain.gabia.com/" target="_blank" rel="noopener">도메인</a>
+            <a href="https://cloud.gabia.com/" target="_blank" rel="noopener">클라우드</a>
+            <a href="https://idc.gabia.com/" target="_blank" rel="noopener">IDC</a>
+            <a href="https://webhosting.gabia.com/" target="_blank" rel="noopener">호스팅</a>
+            <a href="https://biz.gabia.com/" target="_blank" rel="noopener">메일/그룹웨어</a>
+            <a href="https://freehome.gabia.com/" target="_blank" rel="noopener">홈페이지</a>
+            <a href="https://firstmall.kr/index.php" target="_blank" rel="noopener">쇼핑몰</a>
+        </footer>
+        
+    </div>
+</body>
+</html>
