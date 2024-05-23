@@ -1,0 +1,219 @@
+/* ******************* topbar 영역 ************************************** */
+#home_btn{
+	float:left;
+	font-weight: bold;
+	font-family: initial;
+	
+}
+
+#topbar{
+	width: 100%;
+	float: left;
+	padding:unset;
+	display: flex;
+	background-color: skyblue;
+}
+.category{
+	list-style: none;
+	min-width: 150px;
+	background-color: skyblue;
+	padding:5px 10px;
+}
+.category:hover{
+	cursor:pointer;
+	background-color: #67d2db;
+	font-size:1.1em;
+	color:#fff;
+	font-weight:bold;
+}
+.dropdown_list > li{
+	list-style: none;
+	background-color: #15858f;
+	color:#fff;
+}
+.dropdown_list > li:hover{
+	cursor:pointer;
+	background-color: #333;
+}
+
+.logout{
+	font-weight: bold;
+	float: right;
+	align-items: center;
+}
+
+/********************************조회화면 공통스킨****************************************/
+#searchoption_left{
+	float:left;
+}
+#searchoption_right{
+	float:left;
+}
+.group{
+	width:600px;
+	height: 35px;
+	margin-right: 20px;
+	clear:both;
+}
+.search_field{
+	width:150px;
+	float:left;
+	padding: 7px 0;
+}
+.group > input{
+	width: 300px;
+	float:left;
+	padding: 7px;
+}
+.group > button{
+	float:right;
+}
+/*****************************************버튼 영역*************************************/
+.btn_area{
+	margin: 10px;
+}
+
+.btn_area > button{
+	color: black;
+	padding: 5px;
+	margin: 0 5px;
+	float:right;
+	background-color: #67d2db;
+	border-radius: 5px;
+
+}
+/****************************************조회 출력 영역********************************/
+#table_area{
+	margin-top:10px;
+}
+#grid_table{
+	width: 100%;
+	overflow: auto;
+    text-align: center; /* 섹션 내부 요소들을 가운데 정렬 */
+	height: auto;
+	padding: 40px;
+	position:relative;
+	margin:auto auto;
+	box-sizing: border-box;
+	border:2px solid navy;
+	border-radius: 10px;
+	border-collapse: collapse;
+}
+#grid_table td{
+	padding: 6px;
+	border:1px solid #333;
+	text-align:center;
+}
+#grid_table th{
+	padding: 6px;
+	border:1px solid #333;
+	text-align:center;
+}
+#grid_table > button{
+	color: white;
+	padding: 5px;
+	margin: 0 5px;
+	float:right;
+	background-color: #67d2db;
+	border-radius: 5px;
+
+}
+/************************************페이징영역***************************************/
+#pagging{
+	display:flex;
+	width: 100%;
+	padding:unset;
+	align-items: center;
+	justify-content: center;
+}
+#pagging > li{
+	list-style: none;
+	padding:5px;
+}
+#pagging > li:hover{
+	cursor:pointer;
+	background-color:skyblue;
+	color:black;
+}
+#this_page{
+	background-color:#333;
+	color:#fff;
+}
+
+.hide{
+	display:none;
+}
+
+.container{
+
+		width: 400px;
+		height: auto;
+		padding: 40px;
+		box-sizing: border-box;
+		border:2px solid black;
+		border-radius: 10px;
+		position:relative;
+		margin:auto auto;
+		
+
+}
+	
+
+.container > h2{
+		font-size: 24px;
+		margin-bottom: 20px;
+}
+
+#login-form > input{
+		width: 100%;
+		height: 48px;
+		padding: 0 10px;
+		box-sizing: border-box;
+		margin-bottom: 16px;
+		border-radius: 6px;
+		background-color: #F8F8F8;
+
+}
+
+#login-form > input[type="submit"]{
+		color: #fff;
+		font-size: 16px;
+		background-color: #0d6efd;
+		margin-top: 20px;
+		border:none;
+}
+
+.mouse_pointer:hover{
+	cursor:pointer;
+}
+
+/************************edit******************************/
+#edit {
+    text-align: center; /* 섹션 내부 요소들을 가운데 정렬 */
+	width: 400px;
+	height: auto;
+	padding: 40px;
+	box-sizing: border-box;
+	border:2px solid black;
+	border-radius: 10px;
+	position:relative;
+	margin:auto auto;
+}
+
+
+#edit input[type="text"] {
+    margin-bottom: 10px; /* 입력 필드 아래 여백 추가 */
+}
+
+#edit button {
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+	background-color: navy;
+    margin-top: 10px; /* 버튼 위 여백 추가 */
+}
+/************************수정,등록페이지 센터잡기****************/
+#pp{
+	text-align: center;
+}
+

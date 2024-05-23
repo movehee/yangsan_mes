@@ -1,0 +1,13 @@
+
+select[key='order_sid']{
+	width: 100%;
+}
+
+input[key='delivery_cnt']{
+	width: 100%;
+	text-align: center;
+}
+
+input[key='note']{
+	width: 100%;
+}

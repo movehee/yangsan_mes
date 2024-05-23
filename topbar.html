@@ -1,0 +1,68 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<nav >
+<!-- nav bar -->
+  <a id='home_btn' class="bold-link mouse_pointer" onclick='render("main")' >양산 MES</a>
+
+  <span class="logout mouse_pointer" onclick="logout();">로그아웃</span>
+    
+  <ul id='topbar'>
+    
+    <li class='category' onmouseover='dropdown(this, true);' onmouseout='dropdown(this, false);'>
+      <span>기준정보</span>
+      <br/>
+      <ul class='dropdown_list hide'>
+        <li onclick="render('masterdata/account')">거래처</li>
+        <li onclick="render('masterdata/product')">품목</li>
+        <li onclick="render('masterdata/material')">자재</li>
+        <li onclick="render('masterdata/bom')">BOM</li>
+      </ul>
+    </li>
+
+    <li class='category' onmouseover='dropdown(this, true);' onmouseout='dropdown(this, false);'>
+      <span>자재관리</span>
+      <br/>
+      <ul class='dropdown_list hide'>
+        <li onclick="render('material_info/material_order')">자재발주관리</li>
+        <li onclick="render('material_info/material_input')">자재입고관리</li>
+      </ul>
+    </li>
+
+    <li class='category' onmouseover='dropdown(this, true);' onmouseout='dropdown(this, false);'>
+      <span>생산관리</span>
+      <br/>
+      <ul class='dropdown_list hide'>
+        <li onclick="render('production_management/plan')">생산계획관리</li>
+        <li onclick="render('production_management/production')">생산등록관리</li>
+      </ul>
+    </li>
+
+    <li class='category' onmouseover='dropdown(this, true);' onmouseout='dropdown(this, false);'>
+      <span>영업관리</span>
+      <br/>
+      <ul class='dropdown_list hide'>
+        <li onclick="render('sales_management/order')">수주관리</li>
+        <li onclick="render('sales_management/delivery')">납품관리</li>
+      </ul>
+    </li>
+
+     <li class='category' onmouseover='dropdown(this, true);' onmouseout='dropdown(this, false);'>
+      <span>창고관리</span>
+      <br/>
+      <ul class='dropdown_list hide'>
+        <li onclick="render('material_info/material_stock')">자재재고현황</li>
+        <li onclick="render('production_management/product_stock')">품목재고현황</li>
+      </ul>
+    </li>
+   
+
+
+  </ul>
+
+
+
+</nav>
+<div style='clear:both;'></div>
