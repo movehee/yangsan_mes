@@ -1,7 +1,4 @@
 <?php
-
-ob_start();
-
 session_start();
 
 include $_SERVER['DOCUMENT_ROOT'].'/function/php.php';
@@ -89,6 +86,4 @@ if (defined('__CORE_TYPE__') === true) {
         }
     }
 }
-
-ob_end_flush();
 ?>
